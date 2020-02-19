@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>upload papers</title>
+</head>
+<body>
+    <form action="{% url 'index' %}" method="post">
+     {% csrf_token %}
+    <input type="text" name="email_id" placeholder="enter email">
+    <input type="submit" value="yes">
+</form>
+</body>
+</html>
