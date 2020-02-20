@@ -11,5 +11,10 @@
     <input type="text" name="email_id" placeholder="enter email">
     <input type="submit" value="yes">
 </form>
+<form action="{% url 'medic_search' %}" method="POST">
+    {% csrf_token %}
+  <input type="text" name="search" placeholder="search">
+  <button type="submit" name="show">search</button>
+</form>
 </body>
 </html>
